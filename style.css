@@ -9,10 +9,10 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background: #fffafc;
-  color: #3d2b3d;
+  background: #fffdf8;
+  color: #3f2f1f;
 }
 
 img {
@@ -21,26 +21,38 @@ img {
 }
 
 .container {
-  width: min(1100px, 92%);
+  width: min(1150px, 92%);
   margin: 0 auto;
 }
 
 .section {
-  padding: 80px 0;
+  padding: 85px 0;
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   text-align: center;
-  margin-bottom: 20px;
-  color: #b83280;
+  margin-bottom: 10px;
+  color: #9a3412;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #ea580c;
+  margin: 12px auto 0;
+  border-radius: 10px;
 }
 
 .section-text {
   max-width: 750px;
   margin: 0 auto;
   text-align: center;
-  color: #5b4558;
+  color: #5d4633;
   font-size: 1.05rem;
 }
 
@@ -50,81 +62,67 @@ h2 {
   top: 0;
   z-index: 1000;
   background: #ffffff;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  padding: 16px 0;
-}
-
-.navbar .container,
-.navbar {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 14px 4%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar {
-  padding-left: 4%;
-  padding-right: 4%;
-}
-
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #b83280;
+  gap: 14px;
+  color: #9a3412;
 }
+
 .logo img {
-  width: 70px;
-  height: 70px;
+  width: 74px;
+  height: 74px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #f9c6df;
+  border: 3px solid #fed7aa;
+  background: #fff;
 }
-.logo img:hover{
-transform:scale(1.05);
+
+.logo span {
+  font-size: 1.7rem;
+  font-weight: 700;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 24px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #6b426b;
+  color: #7c2d12;
   font-weight: 600;
-  padding: 8px 16px;
-  border-radius: 999px;
+  padding: 8px 18px;
+  border-radius: 20px;
   transition: all 0.3s ease;
 }
-.nav-links {
-  display: flex;
-  gap: 12px;
-}
 
 .nav-links a:hover {
-  background: #f9c6df;
-  color: #b83280;
-}
-
-.nav-links a:hover {
-  color: #b83280;
+  background: #ea580c;
+  color: white;
 }
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #fbcfe8, #f9a8d4, #f472b6);
+  background: linear-gradient(135deg, #7c2d12, #c2410c, #ea580c);
   color: white;
-  padding: 80px 0;
+  padding: 85px 0;
 }
 
 .hero-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 42px;
   flex-wrap: wrap;
 }
 
@@ -155,7 +153,7 @@ transform:scale(1.05);
 
 .hero-image img {
   width: 100%;
-  max-width: 500px;
+  max-width: 520px;
   margin-left: auto;
   border-radius: 24px;
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
@@ -190,11 +188,11 @@ transform:scale(1.05);
 
 .secondary {
   background: white;
-  color: #b83280;
+  color: #9a3412;
 }
 
 .submit-btn {
-  background: #b83280;
+  background: #9a3412;
   color: white;
   width: fit-content;
 }
@@ -202,31 +200,54 @@ transform:scale(1.05);
 /* CARDS */
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   margin-top: 35px;
 }
 
 .card {
   background: white;
-  padding: 28px 24px;
+  padding: 30px 25px;
   border-radius: 18px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  transition: 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  border: 2px solid transparent;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  border-color: #ea580c;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
 }
 
 .card h3 {
-  margin-bottom: 12px;
-  color: #b83280;
+  margin-bottom: 10px;
+  color: #9a3412;
+  font-size: 1.3rem;
+}
+
+.card p {
+  color: #6b4f3a;
+  font-size: 0.98rem;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link:hover h3 {
+  color: #c2410c;
+}
+
+.testimonials-cards {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* PRICING */
 .pricing {
-  background: #fff4f8;
+  background: #fff7ed;
 }
 
 .pricing-grid {
@@ -245,20 +266,20 @@ transform:scale(1.05);
 }
 
 .price-card h3 {
-  color: #b83280;
+  color: #9a3412;
   margin-bottom: 10px;
   font-size: 1.5rem;
 }
 
 .price-card .small-text {
-  color: #6b5b68;
+  color: #6b5b4b;
   margin-bottom: 8px;
 }
 
 .price-card strong {
   display: block;
   font-size: 1.7rem;
-  color: #2f2340;
+  color: #2f2318;
 }
 
 /* GALLERY */
@@ -275,11 +296,16 @@ transform:scale(1.05);
   object-fit: cover;
   border-radius: 18px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
 }
 
 /* QUOTE */
 .quote-box {
-  background: #fde7f3;
+  background: #ffedd5;
   border-radius: 24px;
   text-align: center;
   padding: 50px 24px;
@@ -287,12 +313,12 @@ transform:scale(1.05);
 
 .quote-box p {
   margin: 10px 0 24px;
-  color: #5a4a58;
+  color: #5a4638;
 }
 
 /* BOOKING */
 .booking {
-  background: #fff0f6;
+  background: #fff7ed;
 }
 
 .booking-wrapper {
@@ -314,8 +340,12 @@ transform:scale(1.05);
   margin-bottom: 12px;
 }
 
+.booking-intro h2::after {
+  margin-left: 0;
+}
+
 .booking-intro p {
-  color: #5b4558;
+  color: #5b4638;
 }
 
 .booking-form {
@@ -340,7 +370,7 @@ transform:scale(1.05);
 .form-group label {
   margin-bottom: 8px;
   font-weight: 600;
-  color: #5a2b4d;
+  color: #7c2d12;
 }
 
 .booking-form input,
@@ -348,7 +378,7 @@ transform:scale(1.05);
 .booking-form textarea {
   width: 100%;
   padding: 14px 16px;
-  border: 1px solid #e6cfe0;
+  border: 1px solid #f0c7a5;
   border-radius: 12px;
   font-size: 1rem;
   outline: none;
@@ -358,8 +388,8 @@ transform:scale(1.05);
 .booking-form input:focus,
 .booking-form select:focus,
 .booking-form textarea:focus {
-  border-color: #f472b6;
-  box-shadow: 0 0 0 3px rgba(244, 114, 182, 0.12);
+  border-color: #ea580c;
+  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.12);
 }
 
 .booking-form textarea {
@@ -386,13 +416,54 @@ transform:scale(1.05);
 
 .contact-card p {
   margin-bottom: 12px;
-  color: #44344a;
+  color: #44342a;
 }
 
 .map-container {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* DISH PAGES */
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 35px;
+}
+
+.dish-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dish-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+.dish-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.dish-content {
+  padding: 22px;
+}
+
+.dish-content h3 {
+  color: #9a3412;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.dish-content p {
+  color: #5c4636;
 }
 
 /* FLOATING WHATSAPP */
@@ -414,14 +485,19 @@ transform:scale(1.05);
 footer {
   text-align: center;
   padding: 24px;
-  background: #b83280;
+  background: #9a3412;
   color: white;
   margin-top: 20px;
 }
 
 /* RESPONSIVE */
+@media (max-width: 1100px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 992px) {
-  .cards,
   .pricing-grid,
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -439,6 +515,10 @@ footer {
   .hero-image img {
     margin: 0 auto;
   }
+
+  .testimonials-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -453,9 +533,13 @@ footer {
     justify-content: center;
   }
 
+  .logo span {
+    font-size: 1.4rem;
+  }
+
   .nav-links {
     justify-content: center;
-    gap: 14px;
+    gap: 10px;
   }
 
   .hero {
@@ -475,12 +559,14 @@ footer {
   .cards,
   .pricing-grid,
   .gallery-grid,
-  .form-row {
+  .form-row,
+  .dish-grid,
+  .testimonials-cards {
     grid-template-columns: 1fr;
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   .hero h1 {
@@ -492,8 +578,4 @@ footer {
     bottom: 14px;
     padding: 12px 16px;
   }
-  .logo span {
-  font-weight: 700;
-  font-size: 1.4rem;
-}
 }

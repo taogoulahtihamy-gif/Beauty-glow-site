@@ -1,7 +1,7 @@
 "use strict";
 
-// Site vitrine statique. Le salon doit confirmer son numéro WhatsApp local avant la mise en production.
-const WHATSAPP_NUMBER = "221778492779"; // Ancien numéro du site : à vérifier pour le Tchad.
+// Numéro WhatsApp Beauty Glow (Tchad), fourni par le propriétaire du site.
+const WHATSAPP_NUMBER = "23561488544";
 
 const navToggle = document.getElementById("navToggle");
 const navLinks = document.getElementById("navLinks");

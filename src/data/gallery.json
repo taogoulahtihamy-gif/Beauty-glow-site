@@ -1,0 +1,90 @@
+[
+  {
+    "id": "long-braids",
+    "category": "braids",
+    "title": "Box braids",
+    "image": "images/editorial/long-braids.webp",
+    "alt": "Femme portant de longues box braids cuivrées réunies à l’arrière",
+    "caption": "Des longueurs, du caractère."
+  },
+  {
+    "id": "cornrows",
+    "category": "nattes",
+    "title": "Nattes collées",
+    "image": "images/editorial/cornrows.webp",
+    "alt": "Portrait de profil en noir et blanc, nattes collées soigneusement dessinées",
+    "caption": "Des lignes qui vous dessinent."
+  },
+  {
+    "id": "afro",
+    "category": "afro",
+    "title": "Afro au naturel",
+    "image": "images/editorial/afro.webp",
+    "alt": "Portrait d’une femme noire souriante avec ses cheveux afro naturels",
+    "caption": "Libre, tout simplement."
+  },
+  {
+    "id": "twists",
+    "category": "twists",
+    "title": "Vanilles & twists",
+    "image": "images/editorial/twists.webp",
+    "alt": "Détail de vanilles épaisses sur cheveux naturels texturés",
+    "caption": "La beauté des textures."
+  },
+  {
+    "id": "braids",
+    "category": "braids",
+    "title": "Tresse sculpturale",
+    "image": "images/editorial/braids.webp",
+    "alt": "Portrait d’une femme noire avec une grande tresse sculpturale",
+    "caption": "L’audace en signature."
+  },
+  {
+    "id": "locs",
+    "category": "locs",
+    "title": "Locs & liberté",
+    "image": "images/editorial/locs.webp",
+    "alt": "Femme noire souriante aux longues locs sur fond bleu",
+    "caption": "Une allure bien à vous."
+  },
+  {
+    "id": "sculptural",
+    "category": "braids",
+    "title": "Tresses épaisses",
+    "image": "images/editorial/sculptural.webp",
+    "alt": "Portrait noir et blanc aux tresses épaisses encadrant le visage",
+    "caption": "Une présence singulière."
+  },
+  {
+    "id": "signature",
+    "category": "braids",
+    "title": "Tresses au quotidien",
+    "image": "images/editorial/signature.webp",
+    "alt": "Portrait souriant d’une femme noire portant de longues tresses",
+    "caption": "Le style en mouvement."
+  },
+  {
+    "id": "rituel",
+    "category": "nattes",
+    "title": "L’art du tressage",
+    "image": "images/editorial/rituel.webp",
+    "alt": "Des mains tressant les nattes collées d’une femme dans un salon",
+    "caption": "Un héritage vivant."
+  },
+  {
+    "id": "braids-portrait",
+    "category": "twists",
+    "title": "Twists en douceur",
+    "image": "images/editorial/braids-portrait.webp",
+    "alt": "Portrait d’une femme noire avec de longues torsades encadrant le visage",
+    "caption": "Un classique réinventé."
+  },
+  {
+    "id": "braids-city",
+    "category": "braids",
+    "title": "Braids en mouvement",
+    "image": "images/editorial/braids-city.webp",
+    "alt": "Femme noire portant une longue coiffure tressée à l’extérieur",
+    "caption": "L’allure au quotidien."
+  }
+]

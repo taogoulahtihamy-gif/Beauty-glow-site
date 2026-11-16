@@ -1,0 +1,62 @@
+[
+  {
+    "id": "coiffure",
+    "name": "Coiffures africaines",
+    "eyebrow": "UNE ALLURE BIEN À VOUS",
+    "image": "sculptural",
+    "alt": "Portrait noir et blanc aux tresses sculptées",
+    "description": "Coiffures traditionnelles ou contemporaines, mise en forme et jeux de volumes. Parlons du style qui vous ressemble et de la façon de le porter.",
+    "price": "10 000",
+    "service": "Coiffure"
+  },
+  {
+    "id": "tresses",
+    "name": "Tresses & braids",
+    "eyebrow": "LIGNES & LONGUEURS",
+    "image": "long-braids",
+    "alt": "Détail de longues box braids cuivrées",
+    "description": "Knotless braids, box braids ou nattes collées : une multitude de lignes et de longueurs pour composer votre prochain look.",
+    "price": "15 000",
+    "service": "Tresses"
+  },
+  {
+    "id": "vanilles",
+    "name": "Vanilles & twists",
+    "eyebrow": "LA FORCE DES TEXTURES",
+    "image": "twists",
+    "alt": "Détail de vanilles sur cheveux naturels",
+    "description": "Des torsades souples aux vanilles plus affirmées. Choisissez une inspiration ; nous échangeons sur la longueur, la texture et les possibilités.",
+    "price": null,
+    "service": "Vanilles & twists"
+  },
+  {
+    "id": "soins",
+    "name": "Naturel & soins capillaires",
+    "eyebrow": "PRENDRE SOIN, TOUT SIMPLEMENT",
+    "image": "afro",
+    "alt": "Portrait d’une femme aux cheveux afro naturels",
+    "description": "Hydratation, entretien et mise en valeur des cheveux naturels. Un moment pour vos textures, selon les besoins de vos cheveux.",
+    "price": null,
+    "service": "Soins capillaires"
+  },
+  {
+    "id": "maquillage",
+    "name": "Maquillage",
+    "eyebrow": "VOTRE TOUCHE D’ÉCLAT",
+    "image": "maquillage",
+    "alt": "Produits et palette de maquillage",
+    "description": "Un teint lumineux, un regard souligné, une mise en beauté pour vos événements. De la douceur à l’affirmation, à vous de donner le ton.",
+    "price": "20 000",
+    "service": "Maquillage"
+  },
+  {
+    "id": "manucure",
+    "name": "Manucure & pédicure",
+    "eyebrow": "JUSQU’AU BOUT DES ONGLES",
+    "image": "manucure",
+    "alt": "Main portant une manucure noire et écaille",
+    "description": "Le plaisir des mains et des pieds soignés. Une finition qui accompagne votre style, du quotidien aux moments à célébrer.",
+    "price": "5 000",
+    "service": "Manucure-Pédicure"
+  }
+]

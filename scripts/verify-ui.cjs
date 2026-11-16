@@ -110,7 +110,7 @@ fs.mkdirSync(out, {recursive:true});
     await page.locator('#preferredDate').fill(future);await page.locator('#preferredTime').fill('14:30');await page.locator('#clientMessage').fill('Longueur épaules, merci !');
     await page.locator('.submit-btn').click();const opened=await page.evaluate(()=>window.__opened);assert.equal(opened.length,1);
     const url=new URL(opened[0][0]);assert.equal(url.hostname,'wa.me');assert.equal(url.pathname,'/23561488544');
-    for(const text of ['Bonjour MagicShop and beauty','Aïcha & Mariam','Tresses','Nattes collées','14:30','Longueur épaules'])assert.ok(url.searchParams.get('text').includes(text));
+    for(const text of ['Bonjour Ets. Ndob_MagicShop','Aïcha & Mariam','Tresses','Nattes collées','14:30','Longueur épaules'])assert.ok(url.searchParams.get('text').includes(text));
     assert.equal(await page.locator('#whatsappContinue').getAttribute('href'),url.href);assert.equal(await page.locator('#bookingResult').isVisible(),true);
     await page.locator('#clientName').fill('Aïcha');assert.equal(await page.locator('#bookingResult').isVisible(),false);
     await page.locator('#preferredTime').fill('');await page.locator('#clientMessage').fill('');await page.locator('.submit-btn').click();

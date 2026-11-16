@@ -1,4 +1,4 @@
-# MagicShop and beauty — V4
+# Ets. Ndob_MagicShop — V4
 
 Site multipage statique, sans framework ni dépendance JavaScript en production. Travail réalisé sur `feat/magishop-beauty-v3` ; aucun déploiement.
 
@@ -39,7 +39,7 @@ Chaque URL est un vrai fichier HTML : accès direct, rechargement, historique et
 
 ## Identité et données conservées
 
-Le nom officiel est **MagicShop and beauty**, avec un « c ». La palette prune, lilas et rose, les polices Outfit / Plus Jakarta Sans, les courbes et le logo typographique prolongent la V3.
+Le nom officiel est **Ets. Ndob_MagicShop**, avec un « c ». La palette prune, lilas et rose, les polices Outfit / Plus Jakarta Sans, les courbes et le logo typographique prolongent la V3.
 
 La photographie d’accueil `photo-1521590832167-7bcbfaa6381f` a été vérifiée dans `main:index.html` puis restaurée. Elle représente un intérieur de salon ; elle reste identifiée comme photo d’inspiration. Son cadrage est adapté sans étirement. Voir [les crédits](CREDITS.md).
 

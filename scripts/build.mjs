@@ -9,13 +9,13 @@ const escape = text => String(text).replaceAll('&', '&amp;').replaceAll('"', '&q
 const gallery = JSON.parse(await read('src/data/gallery.json'));
 const services = JSON.parse(await read('src/data/services.json'));
 const pages = [
-  { id:'index', label:'Accueil', title:'Coiffure & beauté à N’Djamena', description:'MagicShop and beauty à Chagoua : coiffures africaines, tresses, soins, maquillage et manucure. Découvrez votre prochain moment beauté.', image:'hero-original' },
-  { id:'notre-univers', label:'Notre univers', title:'Notre univers, la beauté africaine singulière', description:'Entrez dans l’univers MagicShop and beauty : racines africaines, textures naturelles et styles qui vous ressemblent, à N’Djamena.', image:'braids' },
+  { id:'index', label:'Accueil', title:'Coiffure & beauté à N’Djamena', description:'Ets. Ndob_MagicShop à Chagoua : coiffures africaines, tresses, soins, maquillage et manucure. Découvrez votre prochain moment beauté.', image:'hero-original' },
+  { id:'notre-univers', label:'Notre univers', title:'Notre univers, la beauté africaine singulière', description:'Entrez dans l’univers Ets. Ndob_MagicShop : racines africaines, textures naturelles et styles qui vous ressemblent, à N’Djamena.', image:'braids' },
   { id:'prestations', label:'Prestations & tarifs', title:'Prestations & tarifs', description:'Coiffure dès 10 000 FCFA, tresses dès 15 000 FCFA, maquillage dès 20 000 FCFA, manucure et pédicure dès 5 000 FCFA. Découvrez nos prestations.', image:'sculptural' },
   { id:'inspirations', label:'Inspirations', title:'Inspirations, coiffures africaines & textures', description:'Explorez 11 photographies d’inspiration : braids, nattes collées, vanilles, locs et cheveux afro. Choisissez un style pour votre réservation.', image:'locs' },
-  { id:'reservation', label:'Réserver un moment', title:'Demander un rendez-vous', description:'Préparez votre demande de rendez-vous chez MagicShop and beauty sur WhatsApp au +235 61 48 85 44. Date, prestation et inspiration au choix.', image:'signature' },
-  { id:'contact', label:'Nous trouver', title:'Nous trouver à Chagoua, N’Djamena', description:'MagicShop and beauty : Chagoua, avenue Mathias Ngartery, axe CA7, N’Djamena, Tchad. Téléphone et WhatsApp : +235 61 48 85 44.', image:'hero-original' },
-  { id:'credits', label:'Crédits', title:'Crédits photos & informations', description:'Sources et licences des photographies d’inspiration et des typographies utilisées par MagicShop and beauty.', image:'hero-original' }
+  { id:'reservation', label:'Réserver un moment', title:'Demander un rendez-vous', description:'Préparez votre demande de rendez-vous chez Ets. Ndob_MagicShop sur WhatsApp au +235 61 48 85 44. Date, prestation et inspiration au choix.', image:'signature' },
+  { id:'contact', label:'Nous trouver', title:'Nous trouver à Chagoua, N’Djamena', description:'Ets. Ndob_MagicShop : Chagoua, avenue Mathias Ngartery, axe CA7, N’Djamena, Tchad. Téléphone et WhatsApp : +235 61 48 85 44.', image:'hero-original' },
+  { id:'credits', label:'Crédits', title:'Crédits photos & informations', description:'Sources et licences des photographies d’inspiration et des typographies utilisées par Ets. Ndob_MagicShop.', image:'hero-original' }
 ];
 // Vector icons prevent iOS Safari from replacing decorative symbols with colorful emojis.
 const iconArrow = '<svg class="ui-icon ui-icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M8 5h11v11"/></svg>';

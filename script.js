@@ -225,7 +225,7 @@ function initBooking() {
     if (!form.reportValidity()) return;
     const data = new FormData(form);
     const [year, month, day] = data.get("date").split("-");
-    const lines = ["Bonjour MagicShop and beauty,", "", "Je souhaite demander un rendez-vous.", "", `Nom : ${name.value.trim()}`, `Téléphone : ${phone.value.trim()}`, `Prestation : ${service.value}`, `Date souhaitée : ${day}/${month}/${year}`, `Créneau préféré : ${data.get("time") || "À convenir"}`, `Inspiration : ${inspiration ? inspiration.title : "À définir ensemble"}`, `Précisions : ${message.value.trim() || "Aucune"}`, "", "Merci de me confirmer le tarif et les disponibilités."];
+    const lines = ["Bonjour Ets. Ndob_MagicShop,", "", "Je souhaite demander un rendez-vous.", "", `Nom : ${name.value.trim()}`, `Téléphone : ${phone.value.trim()}`, `Prestation : ${service.value}`, `Date souhaitée : ${day}/${month}/${year}`, `Créneau préféré : ${data.get("time") || "À convenir"}`, `Inspiration : ${inspiration ? inspiration.title : "À définir ensemble"}`, `Précisions : ${message.value.trim() || "Aucune"}`, "", "Merci de me confirmer le tarif et les disponibilités."];
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
     document.getElementById("whatsappContinue").href = url;
     result.hidden = false;

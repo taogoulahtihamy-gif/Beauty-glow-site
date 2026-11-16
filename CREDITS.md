@@ -1,4 +1,4 @@
-# MagicShop and beauty — crédits V4
+# Ets. Ndob_MagicShop — crédits V4
 
 ## Photographies
 
@@ -28,7 +28,7 @@ Outfit et Plus Jakarta Sans, variables, sous SIL OFL 1.1. Fichiers et licences l
 
 ## Marque et contenu
 
-Logo typographique et favicon créés pour MagicShop and beauty. Coordonnées fournies : Chagoua, avenue Mathias Ngartery, axe CA7, N’Djamena, Tchad ; +235 61 48 85 44. Aucun horaire inventé. Les quatre prix d’origine sont conservés, sous réserve de confirmation par le salon. Les témoignages non documentés de la précédente version ne sont pas repris.
+Logo typographique et favicon créés pour Ets. Ndob_MagicShop. Coordonnées fournies : Chagoua, avenue Mathias Ngartery, axe CA7, N’Djamena, Tchad ; +235 61 48 85 44. Aucun horaire inventé. Les quatre prix d’origine sont conservés, sous réserve de confirmation par le salon. Les témoignages non documentés de la précédente version ne sont pas repris.
 
 ## Photographies ajoutées en V4
 

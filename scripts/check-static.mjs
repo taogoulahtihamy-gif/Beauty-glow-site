@@ -8,8 +8,8 @@ for(const page of pages){
  const html=fs.readFileSync(path.join(directory,`${page}.html`),'utf8');
  assert.equal((html.match(/<h1[\s>]/g)||[]).length,1,`${page}: one H1`);
  const title=html.match(/<title>(.*?)<\/title>/s)[1];assert.ok(!titles.has(title));titles.add(title);
- assert.ok(!/MagiShop|Beauty Glow/i.test(html),`${page}: obsolete brand`);
- assert.ok(html.includes('MagicShop and beauty'));
+ assert.ok(!/MagiShop|Beauty Glow|MagicShop and beauty/i.test(html),`${page}: obsolete brand`);
+ assert.ok(html.includes('Ets. Ndob_MagicShop'));
  assert.equal((html.match(/aria-current="page"/g)||[]).length,page==='credits'?0:1,`${page}: active navigation`);
  for(const [,attribute,raw] of html.matchAll(/\b(href|src)="([^"]+)"/g)){
   const value=raw.replaceAll('&amp;','&');

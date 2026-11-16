@@ -17,6 +17,9 @@ const pages = [
   { id:'contact', label:'Nous trouver', title:'Nous trouver à Chagoua, N’Djamena', description:'MagicShop and beauty : Chagoua, avenue Mathias Ngartery, axe CA7, N’Djamena, Tchad. Téléphone et WhatsApp : +235 61 48 85 44.', image:'hero-original' },
   { id:'credits', label:'Crédits', title:'Crédits photos & informations', description:'Sources et licences des photographies d’inspiration et des typographies utilisées par MagicShop and beauty.', image:'hero-original' }
 ];
+// Vector icons prevent iOS Safari from replacing decorative symbols with colorful emojis.
+const iconArrow = '<svg class="ui-icon ui-icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M8 5h11v11"/></svg>';
+const iconSparkle = '<svg class="ui-icon ui-icon-sparkle" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"/></svg>';
 const navOrder = ['index','notre-univers','prestations','inspirations','contact','reservation'];
 function galleryItem(photo, preview = false) {
   const href = preview ? `inspirations.html?photo=${encodeURIComponent(photo.id)}` : photo.image;
@@ -46,6 +49,8 @@ for (const page of pages) {
     const canonical=new URL(page.id==='index' ? './' : `${page.id}.html`,site).href;
     html=html.replace('</head>',`<link rel="canonical" href="${escape(canonical)}"></head>`).replace(`content="${fields.ogImage}"`,`content="${escape(new URL(fields.ogImage,site).href)}"`);
   }
+  // Replace presentation-sensitive glyphs with reliable, inheriting SVG artwork.
+  html=html.replaceAll('✳',iconSparkle).replaceAll('↗',iconArrow);
   // Root HTML remains directly usable by a static server; dist is the deployment output.
   await writeFile(path.join(root,`${page.id}.html`),html);
   await writeFile(path.join(root,'dist',`${page.id}.html`),html);

@@ -35,3 +35,134 @@
 /* Vector interface icons: use brand color instead of iOS's emoji glyphs. */
 .ui-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
 .ui-icon-sparkle{width:1.05em;height:1.05em}
+
+/* MagicShop V4 refinement: soft surfaces instead of visible rules and underlines. */
+:root{
+  --soft-surface:#f2eaf3;
+  --soft-surface-hover:#e9d9ec;
+  --soft-white:#fffcfe;
+  --soft-shadow:0 13px 36px rgba(67,34,63,.055);
+}
+/* Links become light rounded capsules rather than long underline strokes. */
+.text-link,
+.scroll-link{
+  border:0;
+  border-radius:999px;
+  background:var(--soft-surface);
+  padding:11px 18px;
+  min-height:44px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:13px;
+  width:max-content;
+  max-width:100%;
+  line-height:1.45;
+  text-decoration:none;
+  transition:background .28s ease,transform .28s ease,color .28s ease;
+}
+.text-link:hover,
+.scroll-link:hover{
+  background:var(--soft-surface-hover);
+  transform:translateY(-2px);
+  gap:13px;
+}
+.text-link .ui-icon,
+.scroll-link .ui-icon{width:16px;height:16px;flex:none}
+.visit-actions .text-link,
+.footer .text-link{
+  background:rgba(226,188,224,.16);
+  color:inherit;
+}
+.visit-actions .text-link:hover,
+.footer .text-link:hover{background:rgba(226,188,224,.32)}
+/* Menu selection is shown as an understated, soft lozenge, not a short line. */
+.nav-inner nav>a:not(.btn)::after{content:none;display:none}
+.nav-inner nav>a:not(.btn){
+  border-radius:999px;
+  padding-inline:13px;
+  transition:background .25s ease,color .25s ease;
+}
+.nav-inner nav>a:not(.btn):hover,
+.nav-inner nav>a[aria-current=page]:not(.btn){
+  background:#efe5f0;
+  color:#683e64;
+}
+.footer-nav a{
+  border-radius:999px;
+  padding:8px 12px;
+  margin-inline:-8px;
+  transition:background .25s ease;
+}
+.footer-nav a:hover{background:var(--soft-surface);text-decoration:none}
+/* Large dividers are replaced with distinct calm surfaces and softer spacing. */
+.home-intro{
+  border-top:0;
+  background:var(--soft-surface);
+  border-radius:34px;
+  padding:48px 42px;
+  margin-block:32px 0;
+}
+.editorial-statement{
+  border-top:0;
+  background:linear-gradient(130deg,#f2eaf3 0%,#f9f3f7 100%);
+  border-radius:32px;
+  padding:42px;
+}
+.catalogue-row{
+  border-bottom:0;
+  background:var(--soft-white);
+  border-radius:30px;
+  box-shadow:var(--soft-shadow);
+  padding:24px;
+  margin-bottom:18px;
+}
+.practical-list>div{
+  border-top:0;
+  background:var(--soft-surface);
+  border-radius:24px;
+  padding:24px;
+  margin-bottom:14px;
+}
+.footer-bottom{
+  border-top:0;
+  background:var(--soft-surface);
+  border-radius:21px;
+  padding:18px 22px;
+  margin-top:8px;
+}
+/* Secondary text links in booking, maps, image credits and notices. */
+.gallery-disclaimer a,
+.booking-result a,
+.chosen-inspiration a,
+.map-caption a,
+.credits-page a:not(.btn){
+  text-decoration:none;
+  border-radius:999px;
+  background:rgba(164,112,158,.12);
+  padding:5px 11px;
+  font-weight:600;
+  transition:background .25s ease,color .25s ease;
+  -webkit-box-decoration-break:clone;
+  box-decoration-break:clone;
+}
+.gallery-disclaimer a:hover,
+.booking-result a:hover,
+.chosen-inspiration a:hover,
+.map-caption a:hover,
+.credits-page a:not(.btn):hover{
+  background:#e9d9ec;
+  color:#43223f;
+}
+@media(max-width:900px){
+  .nav-inner nav>a:not(.btn){padding:12px 17px}
+}
+@media(max-width:700px){
+  .home-intro{padding:29px 24px;margin-block:20px 0;border-radius:26px}
+  .editorial-statement{padding:28px 23px;border-radius:25px}
+  .catalogue-row{padding:19px 16px;gap:15px;border-radius:23px;margin-bottom:13px}
+  .practical-list>div{padding:20px;border-radius:20px}
+  .footer-bottom{padding:16px 15px;border-radius:18px}
+  .text-link,.scroll-link{padding:11px 15px;gap:9px}
+  .text-link:hover,.scroll-link:hover{gap:9px}
+}
